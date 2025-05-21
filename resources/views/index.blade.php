@@ -41,27 +41,19 @@
 
 <section class="container mb-5">
     <h2 class="mb-4 fw-semibold">Eventos</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card shadow-sm">
-                <img src="{{ asset('img/feira_tecnologica.jpeg') }}" class="card-img-top" alt="Evento 1">
-                <div class="card-body">
-                    <h5 class="card-title">Feira Tecnológica</h5>
-                    <p class="card-text">Ocorrendo no final do 2º semestre, é uma feira de exposições tecnológicas e inovações desenvolvidas por alunos da ETEC Zona Leste</p>
-                    <a href="#" class="btn btn-danger">Saiba mais</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach($eventos as $evento)
+        <div class="col">
+            <div class="card bg-danger text-white card-hover h-100 border-0 rounded-3 shadow-lg">
+                <div class="card-body p-4">
+                    <h4 class="card-title fw-bold">{{ $evento->nome }}</h4>
+                    <p class="card-text" style="text-align: justify;">{{ $evento->descricao }}</p>
+                    <p class="card-text"><strong>Data do Evento: </strong>{{ \Carbon\Carbon::parse($evento->data)->translatedFormat('d \d\e F \d\e Y') }}</p>
+                    <button class="btn btn-outline-light">Ver Mais</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card shadow-sm">
-                <img src="{{ asset('img/feira_nacoes.jpg') }}" class="card-img-top" alt="Evento 2">
-                <div class="card-body">
-                    <h5 class="card-title">Feira das Nações</h5>
-                    <p class="card-text">Ocorrida no final do 1º semestre, é uma feira para incentivar a diversidade cultural em nosso país.</p>
-                    <a href="#" class="btn btn-danger">Saiba mais</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </section>
 

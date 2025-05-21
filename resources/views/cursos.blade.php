@@ -9,13 +9,12 @@
         <div class="row row-cols-1 row-cols-md-2 g-4">
             @foreach($cursos as $curso)
             <div class="col">
-                <div class="card h-100 border-0 rounded-3 shadow-lg">
-                    <img src="{{ asset($curso->image_path) }}" class="w-100" alt="">
+                <div class="card bg-danger text-white card-hover h-100 border-0 rounded-3 shadow-lg">
                     <div class="card-body p-4">
                         <h4 class="card-title fw-bold">{{ $curso->nome }}</h4>
                         <p class="card-text" style="text-align: justify;">{{ $curso->descricao }}</p>
                         <p class="card-text"><strong>Coordenador de Curso: </strong>{{ $curso->coord }}</p>
-                        <button class="btn btn-danger">Ver Mais</button>
+                        <button class="btn btn-outline-light">Ver Mais</button>
                     </div>
                 </div>
             </div>

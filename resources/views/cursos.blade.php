@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 @section('content')
 <main class="mb-5">
     <img src="{{ asset('img/course.png') }}" class="w-100" alt="">

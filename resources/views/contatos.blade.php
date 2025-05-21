@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 @section('content')
 <main class="container mb-5 mt-5">
     <h2 class="text-center mb-4 fw-semibold display-4">Contato</h2>

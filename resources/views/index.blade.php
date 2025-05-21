@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 @section('content')
 <main class="mb-5">
     <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">

@@ -5,15 +5,15 @@
     <form class="row g-3" action="{{ route('contatos') }}" method="get">
         <div class="col-md-6 col-12">
             <label for="validationCustom01" class="form-label">Nome Completo</label>
-            <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome completo">
         </div>
         <div class="col-md-6 col-12">
             <label for="validationCustom01" class="form-label">E-Mail</label>
-            <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
         </div>
         <div class="col-12">
             <label for="validationCustom01" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Digite sua mensagem"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Digite sua mensagem"></textarea>
         </div>
         <div class="col-12">
             <button class="btn btn-danger" type="submit">Enviar Mensagem</button>

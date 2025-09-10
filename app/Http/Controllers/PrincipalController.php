@@ -15,6 +15,7 @@ class PrincipalController extends Controller
 
     public function contato()
     {
+        var_dump($_GET);
         return view('contatos');
     }
 }

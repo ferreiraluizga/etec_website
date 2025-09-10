@@ -2,7 +2,7 @@
 @section('content')
 <main class="container mb-5 mt-5">
     <h2 class="text-center mb-4 fw-semibold display-4">Contato</h2>
-    <form class="row g-3">
+    <form class="row g-3" action="{{ route('contatos') }}" method="get">
         <div class="col-md-6 col-12">
             <label for="validationCustom01" class="form-label">Nome Completo</label>
             <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo">

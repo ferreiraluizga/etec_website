@@ -46,3 +46,7 @@ Após esses passos concluídos, a aplicação está pronta para uso
 
 > [!NOTE]
 > Para registrar um novo usuário acesse a rota `localhost:8000/register`
+
+## Atividade: Formulário
+![Formulário 1](screenshot1.png)
+![Formulário 2](screenshot2.png)

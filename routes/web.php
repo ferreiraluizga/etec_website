@@ -29,7 +29,7 @@ Route::get('/cursos', [CursoController::class, 'curso'])->name('cursos');
 Route::get('/departamentos', [DepartamentoController::class, 'departamento'])->name('departamentos');
 
 Route::fallback(function() {
-    echo 'A rota acessada não existe. <a href="'.route('site.index').'">clique aqui</a> para ir para página inicial';
+    echo 'A rota acessada não existe. <a href="'.route('index').'">clique aqui</a> para ir para página inicial';
 });
 
 require __DIR__ . '/auth.php';
